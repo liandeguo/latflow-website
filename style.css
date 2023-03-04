@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: cocha;
+    src: url(Cocha-ow6Xq.otf);
+}
+
+@font-face {
+    font-family: mm;
+    src: url(Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: mr;
+    src: url(Montserrat-Regular.ttf);
+}
+
+body {
+    background-color: #191a1b;
+}
+
+h2 {
+    font-family: cocha;
+}
+
+h1 {
+    font-family: mr;
+}
+
+h4 {
+    font-family: mr;
+}
+
+b {
+    font-family: mm;
+    font-size: 20px;
+}
+
+p {
+    font-family: mr;
+    font-size: 17px;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+#hero {
+    background-color: #F06543;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+#scrolldown {
+    opacity: 0.2;
+    animation-name: fade-in;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0, 1.03, 1, 1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0.2;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.2;
+    }
+}
+
+li {
+    margin: 0 10px 0 10px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+button {
+    padding: 10px 30px 10px 30px;
+    background-color: #313638;
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+}
+
+#img1 {
+    width: 100%;
+    height: 50%;
+    background-image: url("Unknown.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.hero div {
+    text-align: center;
+}
+
+#latflow {
+    margin: 0 40px 0 40px;
+    padding: 30px;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.work {
+    background-image: url(Unknown.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: max-content;
+    padding: 10px 50px 10px 50px;
+}
+
+.work h2 {
+    text-align: center;
+    margin: 30px;
+    font-size: 40px;
+}
+
+.training {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.training div {
+    margin: 0 40px 0 40px;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .training {
+        display: block;
+    }
+
+    .training div:last-of-type {
+        margin-top: 30px;
+    }
+}
+
+.idea {
+    padding: 30px 50px 10px 50px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+.idea h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.idea p {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid white;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+button {
+    padding: 10px 30px 10px 30px;
+    background-color: #F06543;
+    margin: 20px 0 0 0;
+}
+
+button:hover {
+    animation: buttonhover 2s;
+}
+
+@keyframes buttonhover {
+    0% {
+        background-color: #F06543;
+    }
+
+    100% {
+        background-color: #e79f8d;
+    }
+}
+
+.support h2 {
+    font-size: 40px;
+}
+
+.support {
+    text-align: center;
+    margin: 30px;
+    margin-top: 60px;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.footer {
+    background-color: #313638;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px 0 20px 0;
+    width: 100%;
+    height: max-content;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
